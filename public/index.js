@@ -2,6 +2,11 @@ function main(){
     const countContainer = document.querySelector('#count-container');
     const incrementButton = document.querySelector('#increment-button');
     const decrementButton = document.querySelector('#decrement-button');
+// this will print the fetch response as a JSON 
+    const fetch = async () =>{
+        const response =await fetch "then url that needs to be fetched."
+        console.log(response);
+    }
 
     let countValue = 0;
 
@@ -19,4 +24,6 @@ function main(){
     decrementButton.addEventListener('click', decrement);
     countContainer.textContent = countValue;
 }
+
+// Page will load first and then function will run
 main()
