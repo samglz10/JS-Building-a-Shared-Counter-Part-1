@@ -3,10 +3,12 @@ function main(){
     const incrementButton = document.querySelector('#increment-button');
     const decrementButton = document.querySelector('#decrement-button');
 // this will print the fetch response as a JSON 
-    const fetch = async () =>{
+    const fetchCount = async () =>{
         const response =await fetch "then url that needs to be fetched."
+        let result= await response.json(); 
         console.log(response);
     }
+    fetchCount();
 
     let countValue = 0;
 
